@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;;
+    color: #fff;
+}
+
+body{
+    background-image: url(img/sundown.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*HEADER*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 15px #000000;
+}
+.tooglebtn{
+    margin-right: 50px;
+    display: none;
+}
+.getstarted{
+    margin-right: 50px;    
+}
+
+.getstarted a{
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 255, 0.747);
+    text-decoration: none;
+    border-radius: 20px;
+}
+header .logo{
+    color: #fff;
+    margin-left: 50px;
+    cursor: pointer;
+    padding: 10px;
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+header nav a{
+    text-decoration: none;
+    color: #d4d4d4;
+    padding: 10px 13px;
+}
+
+header nav a:hover, .logo:hover{
+    text-shadow: 0px 10px 25px #fff;
+    color: #fff;
+    transition: text-shadow, .2s;
+}
+
+.dropdown-container{
+    position: relative;
+}
+
+.dropdown-content{
+    position: absolute;
+    width: 100%;
+    padding-top: 25px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 10px black;
+    border-radius: 0px 0px 10px 10px ;
+    z-index: 999;
+    display: none;
+}
+.dropdown-content a{
+    display: block;
+}
+
+.dropdown-container:hover .dropdown-content{
+    display: block;
+}
+
+/*CONTAINER*/
+
+
